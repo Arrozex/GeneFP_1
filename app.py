@@ -15,7 +15,6 @@ def index():
 def chat():
     user_input = request.json.get("message", "")
     headers = {
-        "Authorization": f"Bearer {HF_TOKEN}",
         "Content-Type": "application/json"
     }
 
