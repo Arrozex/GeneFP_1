@@ -4,7 +4,7 @@ import os
 
 app = Flask(__name__)
 
-HF_API_URL = "https://yitxx-genefp.hf.space/api/predict"
+HF_API_URL = "https://yitxx-genefp.hf.space/api/predict/"
 HF_TOKEN = os.environ.get("HF_TOKEN")  # 你的 Hugging Face token（安全放這裡）
 
 @app.route("/")
