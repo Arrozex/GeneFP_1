@@ -22,6 +22,12 @@ def chat():
         "data": [user_input]
     }
 
+    print("======= DEBUG =======")
+    print(f"URL: {HF_API_URL}")
+    print(f"Headers: {headers}")
+    print(f"Payload: {payload}")
+    print("=====================")
+
     try:
         response = requests.post(HF_API_URL, headers=headers, json=payload)
         print(f"回傳狀態碼：{response.status_code}")
